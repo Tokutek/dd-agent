@@ -72,7 +72,7 @@ STATUS_VARS = {
     'Tokudb_NONLEAF_DESERIALIZATION_TO_MEMORY_SECONDS': ('mysql.tokudb.deserialization_to_memory.nonleaf', RATE),
 }
 
-class MySql(AgentCheck):
+class TokuDB(AgentCheck):
     def __init__(self, name, init_config, agentConfig):
         AgentCheck.__init__(self, name, init_config, agentConfig)
         self.mysql_version = {}
